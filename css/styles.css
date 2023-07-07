@@ -72,8 +72,8 @@ img {
 
 .container {
   width: 360px;
-  padding-left: 10px;
-  padding-right: 10px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
   margin-right: auto;
   margin-left: auto;
   background-color: antiquewhite;
@@ -604,8 +604,8 @@ img {
 /* =================== section card =================== */
 
 .card {
-  padding-top: 25px;
-  padding-bottom: 60px;
+  /* padding-top: 25px;
+  padding-bottom: 60px; */
 }
 
 .card__title {
