@@ -69,14 +69,15 @@ img {
   margin: 0;
   padding: 0;
 }
-
+.card {
+  background-color: antiquewhite;
+}
 .container {
   width: 360px;
   /* padding-left: 10px;
   padding-right: 10px; */
   margin-right: auto;
   margin-left: auto;
-  background-color: antiquewhite;
 }
 
 .one {
