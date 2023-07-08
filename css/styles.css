@@ -699,18 +699,20 @@ img {
 }
 
 .card__link {
-  display: block;
+  /* display: block; */
   /* flex-basis: calc((100% - 20px) / 3); */
-  width: 90%;
-  margin: 0 auto;
+  /* width: 90%;
+  margin: 0 auto; */
 }
 
 .card__item-wrap {
   position: relative;
-  top: 20px;
-  /* display: flex; */
+  top: 10px;
+
+  width: 90%;
   height: 90vh;
-  /* min-width: 210px; */
+  margin: 0 auto;
+
   box-shadow: 2px 2px 5px #b5b2b3;
   border-radius: 20px;
   overflow: hidden;
