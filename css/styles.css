@@ -80,19 +80,18 @@ img {
 }
 
 .one {
-  /* width: 100vh; */
+  display: flex;
+  flex-wrap: nowrap;
   height: 100vh;
   padding: 0;
-  overflow-y: auto;
-  /* border: 1px solid; */
-
-  scroll-snap-type: y mandatory;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 }
 .two {
-  /* width: 90%; */
+  flex-shrink: 0;
   height: 100%;
-  margin: 0 auto;
-  scroll-snap-align: start;
+  margin: 0 -5px;
+  scroll-snap-align: center;
 }
 
 .header__container {
