@@ -599,7 +599,7 @@ img {
 } */
 
 .card {
-  /* background-color: antiquewhite; */
+  background-color: antiquewhite;
 }
 .card__list {
   display: flex;
@@ -616,6 +616,13 @@ img {
 }
 
 .card__item {
+  flex-shrink: 0;
+  width: 100%;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+.card__item:hover {
+  transform: scale(1.01);
   flex-shrink: 0;
   width: 100%;
   scroll-snap-align: center;
@@ -638,7 +645,7 @@ img {
   align-content: center;
   font-size: 16px;
   /* margin: 0 auto; */
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1.1;
   /* margin-top: 25px; */
   padding: 15px;
@@ -646,7 +653,7 @@ img {
 }
 
 .card__item-img {
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto;
 }
 .card__title {
@@ -663,8 +670,9 @@ img {
   height: 110px;
   font-weight: 400;
   line-height: 1.1;
-  padding: 16px 20px 0px 20px;
+  padding: 0 20px 0px 20px;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .card__button-group {
@@ -676,7 +684,7 @@ img {
 .card__button {
   width: 144px;
   height: 30px;
-  box-shadow: 0px 3px 5px #9dd53a;
+  /* box-shadow: 0px 3px 5px #9dd53a; */
   flex: 0 1 50%;
   /* border-radius: 30px; */
   background: #9dd53a;
@@ -710,7 +718,7 @@ img {
 
 .card__button:hover {
   transform: scale(1.05);
-  box-shadow: 0px 3px 5px #68ace7;
+  /* box-shadow: 0px 3px 5px #68ace7; */
   background: linear-gradient(
     #68ace7 0%,
     #509ce3 50%,
@@ -973,3 +981,70 @@ img {
 .holiday:focus::before {
   background-image: url(../img/svg/sec-footer/svg/holidayrgb.svg);
 }
+
+/* ======== */
+
+label {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  /* display: block;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%; */
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* cursor: pointer; */
+}
+
+.cards {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  z-index: 20;
+}
+
+.cards div {
+  background: #fff;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cards .back {
+  background: #222;
+  position: absolute;
+  position: absolute;
+  /* left: 50%; */
+  width: 100%;
+  top: 0%;
+  height: 99%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+
+input {
+  display: none;
+}
+
+:checked + .cards {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+/* label:hover :checked + .cards {
+  transform: rotateX(160deg);
+  -webkit-transform: rotateX(160deg);
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+} */
