@@ -34,7 +34,7 @@
             </a>
          </div>
          <div>
-            <p class="header__title">PUZZLE CLASSICS</p>
+            <p class="header__title">PUZZLE CARDS</p>
          </div>
          <div class="header__nav-pages">
             <ul class="list footer__nav-list">
@@ -77,21 +77,31 @@
 
    </header>
    <main>
-      <div class="dropdown-container">
-         <div class="dropdown">
-            <button class="dropdown__button ">Find more puzzle CLASSICS</button>
-            <ul class="dropdown__list">
-               <li class="dropdown__list-item" data-value="">Find more puzzle CLASsics</li>
-               <li class="dropdown__list-item" data-value="">Find more puzzle clasSICS</li>
-               <li class="dropdown__list-item" data-value="">Find more puzzle Classics</li>
-
-            </ul>
-            <input type="text" name="select-category" value="" class="dropdown__input-hidden">
-         </div>
-      </div>
-
-
       <section class="section card ">
+         <div class="block-category">
+            <label class="block-category__lbl">
+               <input type="checkbox" name="category-check">2D Geometry
+            </label>
+            <label class="block-category__lbl">
+               <input type="checkbox" name="category-check">
+               3D Geometry
+            </label>
+            <label class="block-category__lbl">
+               <input type="checkbox" name="category-check">Clocks &#38; Watches</label>
+            <label class="block-category__lbl">
+               <input type="checkbox" name="category-check">Distances &#38; Routes</label>
+            <label class="block-category__lbl">
+               <input type="checkbox" name="category-check">Letters &#38; Wordings</label>
+            <label class="block-category__lbl">
+               <input type="checkbox" name="category-check">Logical Reasoning</label>
+            <label class="block-category__lbl">
+               <input type="checkbox" name="category-check">Movements &#38; Speed</label>
+            <label class="block-category__lbl">
+               <input type="checkbox" name="category-check">Numbers &#38; Calculations</label>
+            <label class="block-category__lbl">
+               <input type="checkbox" name="category-check">Weighings &#38; Measurements</label>
+            <button class="block-category__btn " type="button">choose</button>
+         </div>
 
          <div class="container slides-wrapper">
 
@@ -119,39 +129,35 @@
                            <img class="card__item-img" draggable="false"
                               src="./img/A Cone, A Sphere, A Cylinder_puzzle.svg" alt="Which Statement is True">
                            <p class="card-text">Which of the three statements is true?</p>
-                           <div class="card__button-group">
-                              <div class="main-wrap-button js-actions">
 
-                                 <button class="card__button card__button-left link ">
-                                    <span class="card__sub-button card-button__check-text">
-                                       Check
-                                    </span>
-                                    <span class="main-button card__button-text">1st place</span>
-                                 </button>
-                                 <button class="card__button card__button-left link ">
-                                    <span class="card__sub-button card-button__check-text">
-                                       Check
-                                    </span>
-                                    <span class="main-button card__button-text">5</span>
-                                 </button>
-                              </div>
-                              <div class="main-wrap-button js-actions">
 
-                                 <button class="card__button card__button-right link ">
-                                    <span class="card__sub-button card-button__check-text">
-                                       Check
-                                    </span>
-                                    <span class="main-button card__button-text">6</span>
-                                 </button>
-                                 <button class="card__button card__button-right link ">
-                                    <span class="card__sub-button card-button__check-text">
-                                       Check
-                                    </span>
-                                    <span class="main-button card__button-text">7</span>
-                                 </button>
-                              </div>
+                           <div class="card__button-group ">
+
+                              <input class="input-btn" type="radio" name="card1-btn" id="btn1" />
+                              <label class="card__button card__button-left link " for="btn1">
+                                 <p class="card__button-text">1st place</p>
+                              </label>
+
+                              <input class="input-btn" type="radio" name="card1-btn" id="btn2" />
+                              <label class="card__button card__button-left link " for="btn2">
+                                 <p class="card__button-text">5</p>
+                              </label>
+                              <input class="input-btn" type="radio" name="card1-btn" id="btn3" />
+                              <label class="card__button card__button-right link " for="btn3">
+                                 <p class="card__button-text">6</p>
+                              </label>
+
+                              <input class="input-btn" type="radio" name="card1-btn" id="btn4" />
+                              <label class="card__button card__button-right link " for="btn4">
+                                 <p class="card__button-text">7</p>
+                              </label>
+                              <label class="nav-label" for=""></label>
                            </div>
+
+
+
                         </div>
+
 
 
 
@@ -658,8 +664,7 @@
                      <label for="slides_11"></label>
                      <label for="slides_12"></label>
 
-                     <!-- <label class="goto-first" for="slides_1"></label>
-                     <label class="goto-last" for="slides_12"></label> -->
+
                   </div>
                   <div class="navigation">
                      <div>
@@ -675,6 +680,9 @@
                         <label for="slides_10"></label>
                         <label for="slides_11"></label>
                         <label for="slides_12"></label>
+                        <label class="nav-label" for=""></label>
+
+
 
                      </div>
                   </div>
@@ -686,10 +694,12 @@
 
 
 
-            <!-- <h2 class="card__title main__text container ">
-               2D Geometry
-            </h2> -->
 
+
+
+         </div>
+
+         <div class="block-advertising">
          </div>
 
       </section>
