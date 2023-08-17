@@ -173,16 +173,24 @@ img {
 /* =================== block-category ================== */
 .block-category {
   position: absolute;
-  width: 17%;
+  width: 20%;
   /* height: 616px; */
-  top: 118px;
+  top: 70px;
   left: 50px;
-  background-color: #ededed;
+  /* background-color: #ededed; */
   border-radius: 10px;
 }
+.block-category > span {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
 .block-category__lbl {
+  font-size: 16px;
+  font-weight: 700;
   display: flex;
-  padding: 8px;
+  padding: 12px;
   align-items: center;
   color: #648dd4;
   cursor: pointer;
@@ -207,10 +215,10 @@ img {
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 15px;
-  padding: 5px;
+  padding: 9px;
   text-transform: uppercase;
   border: none;
-  border-radius: 30px;
+  border-radius: 4px;
   outline: none;
   color: #648dd4;
   background: #b8b8b8; /* Old Browsers */
