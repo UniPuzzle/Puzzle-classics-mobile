@@ -208,6 +208,7 @@ img {
   margin-top: 22px;
 }
 .block-category__btn {
+  font-weight: bold;
   width: 80%;
   display: flex;
   justify-content: center;
