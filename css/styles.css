@@ -289,16 +289,6 @@ img {
   );
 }
 
-/* =================== block-advertising ================== */
-.block-advertising {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 160px;
-  height: 100vh;
-  background-color: #ededed;
-}
-
 /* ============button=========== */
 .card__button-group {
   display: flex;
@@ -856,4 +846,14 @@ input:checked .navigation.nav-label {
   -o-transform: rotate(225deg);
   -webkit-transform: rotate(225deg);
   transform: rotate(225deg);
+}
+
+/* =================== block-advertising ================== */
+.block-advertising {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 160px;
+  height: 100vh;
+  background-color: #ededed;
 }
