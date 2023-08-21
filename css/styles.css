@@ -33,7 +33,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.12;
-  color: var(--main-text-color);
+  /* color: var(--main-text-color); */
+  color: red;
   background-color: #faebd7;
 }
 
@@ -386,17 +387,59 @@ img {
   content: '';
   position: absolute;
   display: block;
-  top: 97%;
+  z-index: 100;
+  top: 644px;
   /* opacity: 0; */
   width: 23px;
   height: 5px;
   margin: 0px 0px;
   border-radius: 3px;
-  background: #af0000;
-  /* background: #1d63d4; */
+  /* background: #af0000; */
+  background: transparent;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+.nav-label-card1 {
+  left: 29.5px;
+}
+.nav-label-card2 {
+  left: 55px;
+}
+.nav-label-card3 {
+  left: 80px;
+}
+.nav-label-card4 {
+  left: 104.5px;
+}
+.nav-label-card5 {
+  left: 129.5px;
+}
+.nav-label-card6 {
+  left: 155px;
+}
+.nav-label-card7 {
+  left: 180px;
+}
+.nav-label-card8 {
+  left: 205px;
+}
+.nav-label-card9 {
+  left: 229.5px;
+}
+.nav-label-card10 {
+  left: 255px;
+}
+.nav-label-card11 {
+  left: 280px;
+}
+.nav-label-card12 {
+  left: 305px;
 }
 .card__button-group input:checked ~ .nav-label {
-  background: #00af8c;
+  background: #1d63d4;
 }
 input:checked .navigation.nav-label {
   background: #00af8c;
@@ -445,9 +488,9 @@ input:checked .navigation.nav-label {
 }
 
 .card__item-wrap {
-  position: relative;
+  /* position: relative; */
   width: 324px;
-  min-height: 610px;
+  min-height: 616px;
   margin: 10px auto;
   box-shadow: 2px 2px 5px #b5b2b3;
   border-radius: 20px;
@@ -859,10 +902,11 @@ input:checked .navigation.nav-label {
 
 /* =================== block-advertising ================== */
 .block-advertising {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   width: 160px;
-  height: 100vh;
+  /* height: 100vh; */
+  margin-left: -160px;
   background-color: #ededed;
 }
