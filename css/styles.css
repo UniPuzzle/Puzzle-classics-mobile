@@ -906,7 +906,7 @@ input:checked .navigation.nav-label {
   top: 0;
   right: 0;
   width: 160px;
-  /* height: 100vh; */
+  height: 100vh;
   margin-left: -160px;
   background-color: #ededed;
 }
