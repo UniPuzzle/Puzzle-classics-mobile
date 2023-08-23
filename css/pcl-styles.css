@@ -745,14 +745,13 @@ img {
   content: '';
   position: absolute;
   display: block;
-  top: -7px;
-  left: 15px;
+  top: -3px;
+  left: 0px;
   opacity: 0;
-  width: 6px;
-  transform: skewX(20deg);
-  height: 6px;
+  width: 22px;
+  height: 1px;
   margin: 0px 0px;
-  border-radius: 50%;
+  border-radius: 1px;
   background: #9dd53a;
 }
 
