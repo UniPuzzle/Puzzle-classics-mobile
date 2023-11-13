@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css" />
+
+
+  <link rel="stylesheet" href="./css/progress-bar.css" />
+</head>
+
+<body>
+  <div class="diagram progress" data-percent="18">
+    <div class="piece left"></div>
+    <div class="piece right"></div>
+    <div class="text">
+      <div>
+        <b>18</b>
+        <span>PERCENT</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="diagram timer" data-seconds="60">
+    <div class="piece left"></div>
+    <div class="piece right"></div>
+    <div class="text">
+      <div>
+        <b>100</b>
+        <span>SECONDS</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="frame">
+    <div>
+      <div class="headline">
+        <div>your daily progress</div>
+      </div>
+      <div class="circle-big">
+        <div class="text">
+          2758<div class="small">kcal</div>
+        </div>
+        <svg>
+          <circle class="bg" cx="57" cy="57" r="52"></circle>
+          <circle class="progress" cx="57" cy="57" r="52"></circle>
+        </svg>
+      </div>
+      <div class="circles-small">
+        <div class="circle-small">
+          <div class="text">8563<br /><span class="small">steps</span></div>
+          <svg>
+            <circle class="bg" cx="40" cy="40" r="37"></circle>
+            <circle class="progress one" cx="40" cy="40" r="37"></circle>
+          </svg>
+        </div>
+        <div class="circle-small">
+          <div class="text">6,2<br /><span class="small">km</span>
+          </div>
+          <svg>
+            <circle class="bg" cx="40" cy="40" r="37"></circle>
+            <circle class="progress two" cx="40" cy="40" r="37"></circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./js/progress-bar.js" type="module"></script>
+</body>
+
+</html>
