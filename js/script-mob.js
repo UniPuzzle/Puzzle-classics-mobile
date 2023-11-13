@@ -26,7 +26,7 @@ addEventListener(
 
 function swipeUp() {
   console.log(y);
-  // cardList.style.overflow = 'hidden';
+  cardList.style.overflow = 'hidden';
   console.log('swipe up');
   dropMob.classList.remove('drop-mob-show');
 }
