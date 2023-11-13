@@ -13,3 +13,15 @@ document.body.addEventListener('click', function () {
     }
   });
 });
+
+let y;
+addEventListener('touchstart', e => (y = e.changedTouches[0].clientY));
+addEventListener(
+  'touchend',
+  e => e.changedTouches[0].clientY - y < -100 && swipeUp(),
+);
+
+function swipeUp() {
+  cardList.style.overflow = 'hidden';
+  console.log('swipe up');
+}
