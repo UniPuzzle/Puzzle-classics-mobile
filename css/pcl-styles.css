@@ -971,7 +971,7 @@ img {
   display: flex;
   width: 18px;
   height: 18px;
-  background-image: url(/img/svg/cross.svg);
+  background-image: url(../img/svg/cross.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1003,7 +1003,7 @@ img {
   display: flex;
   width: 18px;
   height: 18px;
-  background-image: url(/img/svg/checkmark.svg);
+  background-image: url(../img/svg/checkmark.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
