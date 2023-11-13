@@ -21,12 +21,11 @@ addEventListener('touchstart', e => (y = e.changedTouches[0].clientY));
 
 addEventListener(
   'touchend',
-  e => e.changedTouches[0].clientY - y < -160 && swipeUp(),
+  e => e.changedTouches[0].clientY - y < -160 && setTimeout(swipeUp, 1000),
 );
 
 function swipeUp() {
-  console.log(y);
   cardList.style.overflow = 'hidden';
-  console.log('swipe up');
+
   dropMob.classList.remove('drop-mob-show');
 }
