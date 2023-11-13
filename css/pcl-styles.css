@@ -1116,12 +1116,13 @@ img {
     color: #ffffff;
     text-align: center;
     font-weight: 700;
-    padding-top: 15px;
+    padding-top: 0;
     /* display: none; */
     transition: height 300ms cubic-bezier(0, 0, 1, 1);
   }
   .drop-mob-show {
     height: 170px;
+    padding-top: 15px;
   }
 
   .nav-label {
