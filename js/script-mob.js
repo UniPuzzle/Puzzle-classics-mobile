@@ -8,7 +8,9 @@ const input = document.querySelectorAll('.input-btn');
 document.body.addEventListener('click', function () {
   input.forEach(el => {
     if (el.checked) {
-      dropMob.style.display = 'block';
+      dropMob.classList.add('drop-mob-show');
+
+      // dropMob.style.display = 'block';
       cardList.style.overflow = 'auto';
     }
   });
@@ -24,5 +26,5 @@ addEventListener(
 function swipeUp() {
   cardList.style.overflow = 'hidden';
   console.log('swipe up');
-  dropMob.style.display = 'none';
+  dropMob.classList.remove('drop-mob-show');
 }
