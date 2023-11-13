@@ -21,7 +21,7 @@ addEventListener('touchstart', e => (y = e.changedTouches[0].clientY));
 
 addEventListener(
   'touchend',
-  e => e.changedTouches[0].clientY - y < -50 && swipeUp(),
+  e => e.changedTouches[0].clientY - y < -160 && swipeUp(),
 );
 
 function swipeUp() {
