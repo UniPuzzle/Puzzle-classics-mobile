@@ -1028,7 +1028,7 @@ img {
   }
   .container {
     max-width: 100vw;
-    padding-top: 15px;
+    padding-top: 25px;
     padding-bottom: 0px;
   }
   .block-category {
@@ -1060,7 +1060,7 @@ img {
   .card__item-wrap {
     position: relative;
     width: 100%;
-    height: 95dvh;
+    height: 98dvh;
     min-height: auto;
     overflow: auto;
     box-shadow: none;
