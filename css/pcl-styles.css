@@ -1049,7 +1049,7 @@ img {
     flex-wrap: nowrap;
     width: 100%;
     max-width: 400px;
-    padding: 0 5px;
+    padding: 0 10px;
     margin: 0 auto;
     overflow: hidden;
     scroll-snap-type: y mandatory;
@@ -1060,7 +1060,7 @@ img {
   .card__item-wrap {
     position: relative;
     width: 100%;
-    height: 90dvh;
+    height: 95dvh;
     min-height: auto;
     overflow: auto;
     box-shadow: none;
