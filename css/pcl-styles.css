@@ -1045,7 +1045,7 @@ img {
   }
   .card__list {
     display: block;
-    height: 90dvh;
+    height: 100dvh;
     flex-wrap: nowrap;
     width: 100%;
     max-width: 400px;
