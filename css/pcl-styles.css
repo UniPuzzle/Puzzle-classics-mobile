@@ -1015,6 +1015,9 @@ img {
   background: white;
   border: 1px solid #a1d54f;
 }
+.drop-mob {
+  display: none;
+}
 /* for mobile */
 @media screen and (max-width: 768px) {
   html {
@@ -1039,7 +1042,7 @@ img {
   }
   .card__list {
     display: block;
-    height: 100dvh;
+    height: 90dvh;
     flex-wrap: nowrap;
     width: 100%;
     max-width: 400px;
@@ -1054,7 +1057,7 @@ img {
   .card__item-wrap {
     position: relative;
     width: 100%;
-    height: 95vh;
+    height: 90dvh;
     min-height: auto;
     overflow: auto;
     box-shadow: none;
